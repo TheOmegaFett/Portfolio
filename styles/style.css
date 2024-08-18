@@ -38,22 +38,23 @@ h1 {
   font-weight: 700;
   font-style: normal;
   color: var(--primary-text);
-  padding-left: 24px;
+  margin-left: 24px;
 }
 
 .nav-buttons {
   display: none;
   justify-content: space-between;
   align-items: center;
-  padding: 4px;
 }
 
 .nav-buttons a {
   background-color: var(--accent-color);
   border: 1px solid black;
   border-radius: 10px;
-  padding: 4px;
-  margin: 0 12px;
+  padding: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 16px;
   text-decoration: none;
   color: white;
 }
@@ -148,7 +149,8 @@ main {
 }
 
 .profile-pic {
-  border-radius: 10px;
+  border-radius: 100%;
+  box-shadow: 0 0 24px 1px black;
 }
 
 main section {
@@ -162,12 +164,16 @@ main section {
 }
 
 section p {
-  text-shadow: 0px 1px 8px black;
+  text-shadow: 0px 1px 8px rgb(77, 125, 148);
 }
 
 section li {
   text-align: left; /* Ensure text aligns left */
-  text-shadow: 0px 1px 8px black;
+  text-shadow: 0px 1px 8px rgb(77, 125, 148);
+}
+
+#intro {
+  box-shadow: 0 0 24px 1px black;
 }
 
 #skills {
@@ -179,6 +185,7 @@ section li {
   color: black;
   border-radius: 10px; /* Radius for the content area */
   margin-bottom: 5vh;
+  padding: 4%;
   z-index: 1;
 }
 
@@ -220,6 +227,7 @@ section li {
   background-color: #d9d9d9;
   border-radius: 10px;
   z-index: -1; /* Position it infront of the content */
+  box-sizing: border-box;
 }
 
 footer {
@@ -235,6 +243,7 @@ footer {
   position: static;
   bottom: 0;
   z-index: 1000;
+  box-sizing: border-box;
 }
 
 .social-media {
@@ -279,6 +288,7 @@ footer {
   .profile-pic {
     margin: 18px 0;
     width: 60%;
+    border-radius: 100%;
   }
 
   .nav-buttons {
@@ -295,6 +305,7 @@ footer {
   .profile-pic {
     margin: 28px;
     width: 60%;
+    border-radius: 100%;
   }
 
   .nav-buttons {
@@ -307,6 +318,7 @@ footer {
   .profile-pic {
     margin: 28px;
     width: 260px;
+    border-radius: 100%;
   }
 
   .nav-buttons {
@@ -316,33 +328,40 @@ footer {
 
 /* Styles for devices in landscape orientation */
 @media only screen and (max-width: 768px) and (orientation: landscape) {
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
+  body {
     width: 100vw;
   }
 
-  section {
-    margin: 2% 2%;
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     padding: 0;
-    font-size: x-small;
+    width: 100vw;
+    overflow-x: hidden;
   }
 
-  #skills {
-    margin-top: 8%;
-  }
-
-  .profile-pic {
+  .profile-pic,
+  #skills,
+  #intro {
     width: 28%;
-    margin: 0 1%;
+    margin: 4% 2%;
+    padding: 2%;
+    font-size: small;
+    border-radius: 10px;
+  }
+  .profile-pic {
+    border-radius: 100%;
+    padding: 0;
   }
 
   footer {
-    position: static;
-    bottom: 0; /* Sticks to the top of the viewport */
-    z-index: 1000; /* Ensures it stays above other elements */
+    width: 100vw;
+    height: 12vh;
+    bottom: 0;
+    z-index: 1000;
+    position: sticky;
+    box-sizing: border-box;
   }
-  /* Additional styles for larger screens in landscape */
 }
