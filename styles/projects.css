@@ -1,0 +1,40 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px;
+  border: 2px solid black;
+  background-color: rgb(219, 219, 219);
+  box-shadow: 0 0 10px black;
+}
+
+article div {
+  margin: 10px 20px;
+}
+
+#twitz-img {
+  width: 50%;
+}
+
+#coins {
+  width: 35%;
+  border-radius: 10px;
+  margin: 0 30px;
+}
+
+#lotto {
+  width: 35%;
+  border-radius: 10px;
+  margin: 0 30px;
+}
