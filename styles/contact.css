@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #008080;
+  --primary-text: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact-form {
+  margin: 24px 0;
+}
+
+label {
+  background-color: #d9d9d9;
+  padding: 8px;
+  margin-right: 12px;
+  border-radius: 4px;
+  width: min-content;
+  height: min-content;
+  box-shadow: 0 0 10px black;
+}
+
+input {
+  border-radius: 4px;
+  height: 28px;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.textarea-container {
+  display: flex;
+}
+
+.contact-form textarea {
+  border-radius: 4px;
+  resize: vertical;
+  border: 1px solid black;
+}
+
+button {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  padding: 8px 16px;
+  color: var(--primary-text);
+  transition: all 400ms ease-in-out;
+}
+
+button:hover {
+  background-color: #a0f0e5;
+  color: black;
+  box-shadow: 0 0 12px black;
+}
+
+.extra-links {
+  font-weight: 600;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 30px;
+  background-color: #d9d9d9;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-shadow: 0 0 20px var(--accent-color);
+  box-shadow: 0 0 10px black;
+}
+
+.extra-links a {
+  text-decoration: underline;
+  color: #008080;
+}

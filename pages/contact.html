@@ -32,7 +32,7 @@
   </head>
   <body>
     <header>
-      <h1>Shane Miller - Contact</h1>
+      <h1>Shane Miller<br />Contact</h1>
       <nav>
         <div class="hamburger-menu">
           <input type="checkbox" id="menu-toggle" />
@@ -63,7 +63,64 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div class="contact-form">
+        <form action="submit">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+          <br /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <br /><br />
+
+          <div class="textarea-container">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="extra-links">
+        Personal Twitch -
+        <a href="https://www.twitch.tv/theomegafett/"
+          >www.twitch.tv/theomegafett/</a
+        ><br /><br />
+        Twit Z Twitch -
+        <a href="https://www.twitch.tv/twitzgame/">www.twitch.tv/twitzgame/</a
+        ><br /><br />
+        Personal Discord -
+        <a href="https://discord.gg/QBkZ6MVh6t">discord.gg/QBkZ6MVh6t</a
+        ><br /><br />
+        Twit Z Discord -
+        <a href="https://discord.gg/H7SW4FRbqN">discord.gg/H7SW4FRbqN</a
+        ><br /><br />
+        Links Hub -
+        <a href="https://theomegafett.w3spaces.com/"
+          >https://theomegafett.w3spaces.com/</a
+        >
+      </div>
+    </main>
 
     <footer>
       &copy; 2024 Shane W Miller. All rights reserved.
