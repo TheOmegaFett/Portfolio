@@ -85,6 +85,12 @@ button:hover {
 
 /* Tablet view */
 @media (min-width: 769px) {
+  html,
+  body,
+  main {
+    width: 100%;
+  }
+
   main {
     display: flex;
     flex-direction: column;
@@ -94,7 +100,7 @@ button:hover {
   .contact-form {
     display: flex;
     justify-content: center;
-    width: 800px;
+    width: auto;
     margin: 48px 0;
   }
   input {
@@ -144,27 +150,53 @@ button:hover {
 }
 
 /* Styles for devices in landscape orientation */
-@media only screen and (min-width: 769px) and (orientation: landscape) {
+@media only screen and (max-width: 768px) and (orientation: landscape) {
   main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
+
   .contact-form {
     margin: 12px 24px;
   }
   .extra-links-larger-screens {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
+/* Style for larger screens in landscape orientation */
 @media only screen and (min-width: 769px) and (orientation: landscape) {
   main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     margin-top: 48px;
+  }
+
+  .extra-links-larger-screens {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .personal-links,
+  .twitz-links {
+    width: 300px;
+    align-self: center;
+  }
+  .contact-form {
+    margin: 12px 24px;
+  }
+  input {
+    width: auto;
+  }
+  .contact-form textarea {
+    width: auto;
   }
 }
