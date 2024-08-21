@@ -57,10 +57,11 @@ button:hover {
 }
 
 .extra-links {
-  font-weight: 600;
   width: 80%;
   height: auto;
-  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  padding: 48px 0;
   margin-bottom: 30px;
   background-color: #d9d9d9;
   border: 2px solid black;
@@ -72,4 +73,98 @@ button:hover {
 .extra-links a {
   text-decoration: underline;
   color: #008080;
+}
+
+.extra-links-larger-screens {
+  display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+}
+
+/* Tablet view */
+@media (min-width: 769px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin: 48px 0;
+  }
+  input {
+    width: 300px;
+  }
+  .contact-form textarea {
+    width: 276px;
+  }
+
+  .extra-links {
+    display: none;
+  }
+
+  .extra-links-larger-screens {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    width: 80%;
+    height: auto;
+    font-weight: 600;
+    text-align: center;
+  }
+  .twitz-links,
+  .personal-links {
+    padding: 48px 0;
+    margin: 0 24px;
+    margin-bottom: 30px;
+    background-color: #d9d9d9;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-shadow: 0 0 20px var(--accent-color);
+    box-shadow: 0 0 10px black;
+  }
+
+  .personal-images img {
+    margin-bottom: 24px;
+  }
+
+  .twitz-images img {
+    width: 50%;
+    margin-bottom: 24px;
+  }
+}
+
+/* Destop view */
+@media (min-width: 1024px) {
+}
+
+/* Styles for devices in landscape orientation */
+@media only screen and (min-width: 769px) and (orientation: landscape) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contact-form {
+    margin: 12px 24px;
+  }
+  .extra-links-larger-screens {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 769px) and (orientation: landscape) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 48px;
+  }
 }
