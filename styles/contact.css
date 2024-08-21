@@ -171,15 +171,21 @@ button:hover {
 /* Style for larger screens in landscape orientation */
 @media only screen and (min-width: 769px) and (orientation: landscape) {
   main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     margin-top: 48px;
   }
-
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1 / 1;
+    grid-column: 1 / 2;
+    margin: 12px 24px;
+  }
   .extra-links-larger-screens {
+    grid-row: 1 / 2;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -188,15 +194,12 @@ button:hover {
   .personal-links,
   .twitz-links {
     width: 300px;
-    align-self: center;
   }
-  .contact-form {
-    margin: 12px 24px;
-  }
+
   input {
-    width: auto;
+    width: 248px;
   }
   .contact-form textarea {
-    width: auto;
+    width: 230px;
   }
 }
