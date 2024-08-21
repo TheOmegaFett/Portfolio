@@ -14,7 +14,7 @@ a:visited {
   color: #000;
 }
 
-article {
+.card {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -26,7 +26,7 @@ article {
   box-shadow: 0 0 10px black;
 }
 
-article div {
+.card div {
   margin: 10px 20px;
 }
 
