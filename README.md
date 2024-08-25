@@ -17,3 +17,17 @@ This section contains all the main content for each page in a semantic way for a
 ### Footer
 
 This section contains copyright information and links to LinkedIn, Facebook and Twitter/X. This footer is standard across the entire websites pages for thematic reasons and ease of access to important social media.
+
+## Pages
+
+### Index Page
+
+This page have a profile picture of myself and an introduction along with the skills section.
+
+### Projects Page
+
+This page has a collection of projects with a picture and infomation about the each project.
+
+### Contact Page
+
+This page contains a contact form and extra links. The extra links contains perssonal links and other professional links based on my projects.

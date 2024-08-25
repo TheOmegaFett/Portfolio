@@ -215,7 +215,7 @@ section li {
 #skills::before {
   content: "";
   position: absolute;
-  top: -4px; /* Adjust this to move the border outward */
+  top: -4px; 
   left: -4px;
   right: -4px;
   bottom: -4px;
